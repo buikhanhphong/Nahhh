@@ -1,0 +1,71 @@
+-- Load thư viện UI
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("PHONG RBLX | Menu Toàn Năng", "White")
+
+-- Tab chính
+local MainTab = Window:NewTab("Main")
+local MainSection = MainTab:NewSection("Auto Farm & Functions")
+
+-- Auto Farm Level
+MainSection:NewButton("Auto Farm Level", "Tự farm quái để lên cấp", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/zUJEUz2u"))()
+end)
+
+-- Auto Farm Bone (Sea 3)
+MainSection:NewButton("Auto Farm Bone (Sea 3)", "Tự đánh lấy xương", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/H2gGf58A"))()
+end)
+
+-- Auto Prehistoric Island
+MainSection:NewButton("Auto Prehistoric Island", "Tự động đánh Golem, nhặt đồ", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/VnCB5npe"))()
+end)
+
+-- Tab Raid & Awakening
+local RaidTab = Window:NewTab("Auto Raid & Awakening")
+local RaidSection = RaidTab:NewSection("Raid & Thức Tỉnh")
+
+-- Auto Raid Trái
+RaidSection:NewButton("Auto Raid Trái", "Tự tạo, tự raid", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/yGH0kZYX"))()
+end)
+
+-- Auto Awakening
+RaidSection:NewButton("Auto Awakening", "Tự thức tỉnh trái", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/JRmWZgJG"))()
+end)
+
+-- Tab Event
+local EventTab = Window:NewTab("Sea Event")
+local EventSection = EventTab:NewSection("Sự Kiện Biển Lớn")
+
+-- Auto Sea Event
+EventSection:NewButton("Auto Sea Event", "Tự săn rương, tàu quái", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/z7Rw7zW4"))()
+end)
+
+-- Tab Hỗ trợ
+local SupportTab = Window:NewTab("Support")
+local SupportSection = SupportTab:NewSection("Tiện Ích Thêm")
+
+-- Auto Haki V2
+SupportSection:NewButton("Auto Haki V2", "Luôn bật haki vũ trang", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/LAFdQjAA"))()
+end)
+
+-- Auto Teleport NPC
+SupportSection:NewButton("Teleport NPC", "Bay nhanh tới NPC", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/nTSuRkeN"))()
+end)
+
+-- Anti AFK
+SupportSection:NewButton("Anti AFK", "Không bị kick vì afk", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/WFQqv6Yz"))()
+end)
+
+-- Thông báo khi mở script
+game.StarterGui:SetCore("SendNotification", {
+    Title = "PHONG RBLX",
+    Text = "Chúc em chơi game vui vẻ nhé!",
+    Duration = 7
+})
